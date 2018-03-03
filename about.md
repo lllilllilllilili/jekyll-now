@@ -6,10 +6,10 @@ permalink: /about/
 
 Some information about you!
 
-### More Information
+### 명언
 
-A place to include any other types of information that you'd like to include about yourself.
+Waste no more time talking about great souls and how they should be. Become one yourself!
 
-### Contact me
+### 메일주소
 
-[email@domain.com](mailto:email@domain.com)
+[hik3562@naver.com](mailto:hik3562@naver.com)
