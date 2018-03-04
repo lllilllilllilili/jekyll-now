@@ -16,7 +16,7 @@ Waste no more time talking about great souls and how they should be. Become one 
 
 ### 네이버블로그
 
-[https://blog.naver.com/glifed](mailto:https://blog.naver.com/glifed)
+[https://blog.naver.com/glifed](https://blog.naver.com/glifed)
 
 ### 메일주소
 
