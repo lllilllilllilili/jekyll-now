@@ -55,3 +55,5 @@ class interfaceMan implements interfaceTest2{
     //Interface의 메소드는 public으로 나와야 한다.
 }
 ```
+## Reference
+생활코딩! 자바프로그래밍입문

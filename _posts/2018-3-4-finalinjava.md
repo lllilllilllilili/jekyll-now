@@ -9,7 +9,7 @@ title : JAVA에서 Final 은?
 *abstract을 간단하게 정리하면 class 앞에 abstract를 작성해야하며, 반드시 abstract은 ==상속== 받아야한다. 또한, class 앞에 abstract가 없다고 하더라도 멤버함수에 abstract 되면 이또한 반드시 ==상속== 받아야 한다. 일종에 재정의라고 생각하면 될것 같다. 상속이라는 규제가 따를뿐*
 
 코드를 보면 쉽게 이해할 수 있다.
-```
+```java
 class finaltest{
 	static double x = 1.1;
 }
@@ -25,7 +25,7 @@ public class test{
 
 ## 메소드 와 final
 다음 두가지를 살펴보자.
-```
+```java
 class finaltest{
 	final default void fianltestfunction(){
     	...
@@ -42,7 +42,7 @@ public class finaltestmain extends finaltest{
 }
 //error : final은 변경할수 없다.
 ```
-```
+```java
 final class finaltest{
 	 default void fianltestfunction(){
     	...
