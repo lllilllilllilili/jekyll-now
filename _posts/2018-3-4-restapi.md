@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rest Api
+title: Rest Api가 뭘까?
 ---
 
 # Rest Api
@@ -31,7 +31,7 @@ DELETE : 삭제
 ```
 
 #  HTTP 응답상태코드
-
+```
 200 : 클라이언트 정상수행
 
 201 : 클라이언트가 만드는것을 요청하고 그것을 수행할 경우
@@ -45,6 +45,6 @@ DELETE : 삭제
 405 : 클라이언트가 리소스에 사용불가능한 소스를 요청했을때 
 
 301, 500 : 클라이언트가 리소스 URL 변경되는것을 요청했을때/ 서버문제  
-
+```
 # Reference
 [REST API 제대로 알고 사용하기](http://meetup.toast.com/posts/92)
