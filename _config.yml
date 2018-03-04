@@ -85,12 +85,3 @@ exclude:
   - README.md
   - CNAME
   
-navigation:
- - title: List
-   url: /index.html
- - title: Infomation
-   url: /about
- - title: Categories
-   url: /category
- - title: Infomation2
-   url: /about2
