@@ -84,6 +84,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
 navigation:
  - title: List
    url: /index.html
