@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Info
-permalink: /About/
+permalink: /about/
 ---
 
 ### 학습
