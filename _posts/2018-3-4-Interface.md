@@ -16,7 +16,7 @@ abstract과 마찬가지로 반드시 구현해 줘야 하는 형태입니다.
 ==abstract == 와 마찬가지로 public으로 정의해야 한다. 한 클래스에 여러개의 interface를 받을 수 있다는 점.
 메소드는 몸체 밖에 없다.
 다음의 두 가지 형식을 보면서 Interface에 익숙해지자.
-```
+```java
 package *
 interface interfaceTest{
 	public void interface1(); //블록은 만들지 않는다.
@@ -36,7 +36,7 @@ class interfaceMan implements interfaceTest, interfaceTest2{
 
 ```
 
-```
+```java
 package *
 interface interfaceTest{
 	public void interface1(); //블록은 만들지 않는다.
