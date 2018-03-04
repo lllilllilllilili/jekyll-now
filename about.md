@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Info
-permalink: /Portfolio/
+permalink: /About/
 ---
 
 ### 학습
