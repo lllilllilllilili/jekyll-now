@@ -2,7 +2,8 @@
 layout: post
 title: Rest Api가 뭘까?
 ---
-
+## 레지스트 ip
+레지스터 ip
 # Rest Api
 Rest api 란 웹을 활용한 기술이다.
 특징으로는 6가지가 존재하는데, 
