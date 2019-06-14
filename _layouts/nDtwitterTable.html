@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+
+    <title>nDtwitterTable</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--[if !IE]><!-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font: 14px/1.4 Georgia, Serif;
+        }
+        #page-wrap {
+            margin: 50px;
+        }
+        p {
+            margin: 20px 0;
+        }
+
+        /*
+        Generic Styling, for Desktops/Laptops
+        */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        /* Zebra striping */
+        tr:nth-of-type(odd) {
+            background: #eee;
+        }
+        th {
+            background: #333;
+            color: white;
+            font-weight: bold;
+            cursor: s-resize;
+            background-repeat: no-repeat;
+            background-position: 3% center;
+        }
+        td, th {
+            padding: 6px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th.des:after {
+            content: "\21E9";
+        }
+
+        th.aes:after {
+            content: "\21E7";
+        }
+
+        /*
+        Max width before this PARTICULAR table gets nasty
+        This query will take effect for any screen smaller than 760px
+        and also iPads specifically.
+        */
+        @media
+        only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+            /* Force table to not be like tables anymore */
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr { border: 1px solid #ccc; }
+
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+
+            /*
+            Label the data
+            */
+            td:before {
+                content: attr(data-th) ": ";
+                font-weight: bold;
+                width: 6.5em;
+                display: inline-block;
+            }
+        }
+
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px) {
+            body {
+                padding: 0;
+                margin: 0;
+                width: 320px; }
+        }
+
+        /* iPads (portrait and landscape) ----------- */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            body {
+                width: 495px;
+            }
+        }
+
+    </style>
+    <!--<![endif]-->
+
+</head>
+
+<body>
+
+<div id="page-wrap">
+
+    <h1>nDtwitterTable</h1>
+
+    <p>
+    <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: Red;">
+        (“und” if no language could be detected)
+        참고 : Name - Language code =>
+    </span>
+    <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    English(default) -
+    </span>
+    <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    en /
+    </span>
+
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Arabic  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    ar  /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Bengali  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    bn /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Czech   -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    cs /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Danish   -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    da /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    German    -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    de /
+    </span>
+        </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Greek     -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    el /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Spanish -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    es /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Persian -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    fa /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Finnish -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    fi /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Filipino -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    fil /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    French -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    fr /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Hebrew  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    he /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Hindi  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    hi /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Hungarian  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    hu /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Indonesian  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    id /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Italian  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    it /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Japanese  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    ja /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Korean  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    ko /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Malay  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    msa /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Dutch  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    nl /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Norwegian  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    no /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Polish  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    pl /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Portuguese  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    pt /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Romanian  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    ro /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Russian  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    ru /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Swedish  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    sv /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Thai  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    th /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Turkish  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    tr /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Ukrainian  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    uk /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Urdu  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    ur /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Vietnamese  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    vi /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Chinese (Simplified)  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    zh-cn /
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: green;">
+    Chinese (Traditional)  -
+    </span>
+        <span style=" font: italic bold 1.5em/1em Georgia, serif ; color: mediumspringgreen;">
+    zh-tw /
+    </span>
+    </p>
+
+
+</div>
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript">
+    d3.csv("nDtwitterRecordFile.csv", function(error, data) {
+        if (error) throw error;
+
+        var sortAscending = true;
+        var table = d3.select('#page-wrap').append('table');
+        var titles = d3.keys(data[0]);
+        var headers = table.append('thead').append('tr')
+            .selectAll('th')
+            .data(titles).enter()
+            .append('th')
+            .text(function (d) {
+                return d;
+            })
+            .on('click', function (d) {
+                headers.attr('class', 'header');
+
+                if (sortAscending) {
+                    rows.sort(function(a, b) { return b[d] < a[d]; });
+                    sortAscending = false;
+                    this.className = 'aes';
+                } else {
+                    rows.sort(function(a, b) { return b[d] > a[d]; });
+                    sortAscending = true;
+                    this.className = 'des';
+                }
+
+            });
+
+        var rows = table.append('tbody').selectAll('tr')
+            .data(data).enter()
+            .append('tr');
+        rows.selectAll('td')
+            .data(function (d) {
+                return titles.map(function (k) {
+                    return { 'value': d[k], 'name': k};
+                });
+            }).enter()
+            .append('td')
+            .attr('data-th', function (d) {
+                return d.name;
+            })
+            .text(function (d) {
+                return d.value;
+            });
+    });
+</script>
+</body>
+
+</html>
