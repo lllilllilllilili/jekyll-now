@@ -2,8 +2,9 @@
 main:
   - title: "Portfolio"
     url: /Portfolio/
-  - title: "toy"
-    url: /toy/
-  - title: "study"
-    url: /study/
- 
+  - title: "Toy"
+    url: /Toy/
+  - title: "Study"
+    url: /Study/
+  - title: "Company"
+    url: /Company/
