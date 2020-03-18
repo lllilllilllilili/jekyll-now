@@ -1,6 +1,7 @@
 ---
 title: "portfolio poster"
-layout: categories
+layout: category
 permalink: /Portfolio/
+taxonomy: jekyll
 author_profile: true
 ---
