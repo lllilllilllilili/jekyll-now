@@ -1,6 +1,5 @@
 ---
 title: "Welcome to Jekyll!"
-permalink: /Portfolio/
 date: 2020-03-19
 categories: jekyll update
 ---
