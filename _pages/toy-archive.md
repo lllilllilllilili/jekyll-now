@@ -5,4 +5,4 @@ permalink: /Toy/
 taxonomy: update
 author_profile: true
 ---
-This is a poster for the Toy Project.🔥
+This is a post about the Toy Project. 🔥
