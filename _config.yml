@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Hwang In Gyu"
-  avatar           : "/assets/images/ME.PNG"
+  avatar           : "/assets/images/ME.jpeg"
   bio              : "tqbs1024@gmail.com"
   location         : "Seoul"
   email            : "tqbs1024@gmail.com"
@@ -131,7 +131,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-
+  avatar           : "/assets/images/ME.jpeg"
 # Site Footer
 footer:
   links:
