@@ -128,11 +128,11 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/lllilllilllilili"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-  avatar           : "/assets/images/ME.jpeg"
+ 
 # Site Footer
 footer:
   links:
