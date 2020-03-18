@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Wan's Portfolio"
+title                    : "InGyu's Portfolio"
 title_separator          : "-"
-subtitle                 : "This is a blog for my portfolio. See the posts!"# site tagline that appears below site title in masthead
-name                     : "Oh seungwan"
+subtitle                 : "Thank you for coming to see us."# site tagline that appears below site title in masthead
+name                     : "InGyu"
 description              : "We will find the way as always"
-url                      : "https://wanoh.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://lllilllilllilili.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -107,11 +107,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Oh seung wan"
+  name             : "Hwang In Gyu"
   avatar           : "/assets/images/ME.PNG"
-  bio              : "face4717@gmail.com"
-  location         : "Seoul or Jeju"
-  email            : "face4717@gmail.com"
+  bio              : "tqbs1024@gmail.com"
+  location         : "Seoul"
+  email            : "tqbs1024@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
