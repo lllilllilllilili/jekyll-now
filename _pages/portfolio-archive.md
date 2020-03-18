@@ -1,5 +1,5 @@
 ---
-title: "portfolio poster"
+title: "Portfolio poster"
 layout: category
 permalink: /Portfolio/
 taxonomy: jekyll
