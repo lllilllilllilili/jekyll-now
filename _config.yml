@@ -113,7 +113,7 @@ author:
   location         : "Seoul"
   email            : "tqbs1024@gmail.com"
   github           : "https://github.com/lllilllilllilili"
-  stackoverflow    : 
+  stackoverflow    : "황인규"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -133,7 +133,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label : "Stackoverflow"
+    - label: "Stackoverflow"
       icon: "fab fa-stack-overflow"
        url: "https://stackoverflow.com/users/10683643/황인규"
 # Site Footer
