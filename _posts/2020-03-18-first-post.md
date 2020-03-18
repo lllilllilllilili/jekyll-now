@@ -21,4 +21,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 
-![안녕하세요.](./2020-03-19-second-post.md)
+
+
+> - [0501](./2020-03-19-second-post.md) | HTML구조, 웹 표준, 웹 접근성, 개발환경 세팅
