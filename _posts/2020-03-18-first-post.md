@@ -20,7 +20,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
-
-
-
 [0501]: https://github.com/lllilllilllilili/lllilllilllilili.github.io/blob/master/_posts/2020-03-19-third-post.md
