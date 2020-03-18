@@ -133,9 +133,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Stackoverflow"
-      icon: "fab fa-stack-overflow"
-       url: "https://stackoverflow.com/users/10683643/황인규"
+    # - label: "Stackoverflow"
+      # icon: "fab fa-stack-overflow"
+       # url: "https://stackoverflow.com/users/10683643/황인규"
 # Site Footer
 footer:
   links:
