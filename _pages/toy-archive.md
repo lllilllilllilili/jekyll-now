@@ -1,6 +1,8 @@
 ---
 title: "Toy poster"
-layout: categories
+layout: category
 permalink: /Toy/
+taxonomy: update
 author_profile: true
 ---
+This is a poster for the Toy Project.🔥
