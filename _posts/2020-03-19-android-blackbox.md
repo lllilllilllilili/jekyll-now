@@ -58,23 +58,23 @@ $ git push
 
 ## Result
 
-<center><img src="../assets/images/android/a1.png" width="300" height="300"></center>
+<center><img src="../../assets/images/android/a1.png" width="300" height="300"></center>
 <center>(Initial screen)</center>
 
-<center><img src="../assets/images/android/a2.png" width="300" height="300"></center>
+<center><img src="../../assets/images/android/a2.png" width="300" height="300"></center>
 <center>GPS is loaded at first start.</center>
 
 
-<center><img src="../assets/images/android/a3.png" width="300" height="300"></center>
+<center><img src="../../assets/images/android/a3.png" width="300" height="300"></center>
 <center>If you move from the current location after recording, you can check the latitude, longitude, and speed values.</center>
 
-<center><img src="../assets/images/android/a4.png" width="300" height="300"></center>
+<center><img src="../../assets/images/android/a4.png" width="300" height="300"></center>
 <center>The file is saved in the current time format when recording is stopped.</center>
 
-<center><img src="../assets/images/android/a5.png" width="300" height="300"></center>
+<center><img src="../../assets/images/android/a5.png" width="300" height="300"></center>
 <center>Shows the saved list after recording.</center>
 
-<center><img src="../assets/images/android/a6.png" width="300" height="300"></center>
+<center><img src="../../assets/images/android/a6.png" width="300" height="300"></center>
 <center>When you play a saved recording, the information is displayed on the right side of the progressive bar below.</center>
 
 
