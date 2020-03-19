@@ -11,10 +11,6 @@ categories: portfolio
 ![java](https://img.shields.io/badge/java-java jdk 13-yellow?logo=java)
 
 
-
-
----
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -62,14 +58,26 @@ $ git push
 
 ## Result
 
-![a1](../assets/images/android/a1.png){: width="400" height="400"}
-(Initial screen)
+<center><img src="../assets/images/android/a1.png" width="300" height="300"></center>
+<center>(Initial screen)</center>
 
-![a2](../assets/images/android/a2.png){: width="400" height="400"}
+<center><img src="../assets/images/android/a2.png" width="300" height="300"></center>
+<center>GPS is loaded at first start.</center>
 
 
-![a3](../assets/images/android/a3.png){: width="400" height="400"}
+<center><img src="../assets/images/android/a3.png" width="300" height="300"></center>
+<center>If you move from the current location after recording, you can check the latitude, longitude, and speed values.</center>
 
+<center><img src="../assets/images/android/a4.png" width="300" height="300"></center>
+<center>The file is saved in the current time format when recording is stopped.</center>
+
+<center><img src="../assets/images/android/a5.png" width="300" height="300"></center>
+<center>Shows the saved list after recording.</center>
+
+<center><img src="../assets/images/android/a6.png" width="300" height="300"></center>
+<center>When you play a saved recording, the information is displayed on the right side of the progressive bar below.</center>
+
+[![Video Label]()](https://www.youtube.com/watch?v=1L3viy_noBQ)
 
 ## code
 [code]
