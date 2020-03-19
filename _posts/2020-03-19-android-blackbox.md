@@ -43,8 +43,6 @@ MediaRecorder를 이용해서 녹화 및 재생하는 앱을 작성합니다. �
 
 ## Prerequisite
 
-Must run in terminal in the fedora environment.
-
 - [android studio](https://developer.android.com/studio): It's developed by the Android studio. Deploy using multiple libraries.
 
 ## Development
