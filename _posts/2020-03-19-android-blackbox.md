@@ -90,7 +90,9 @@ $ git push
 <center>저장된 녹화영상을 재생하면 밑에 프로그레바와 우측에 정보가 표시됩니다.</center>
 <br>
 
-[![Video Label](http://img.youtube.com/vi/1L3viy_noBQ/0.jpg)](https://www.youtube.com/watch?v=1L3viy_noBQ){:width:="100%" height="100%"}
+<center>
+[![Video Label](http://img.youtube.com/vi/1L3viy_noBQ/0.jpg)](https://www.youtube.com/watch?v=1L3viy_noBQ)
+</center>
 <center>위 img 클릭 시 영상으로 넘어갑니다. 😀</center>
 
 ## code
