@@ -7,8 +7,8 @@ categories: portfolio
 #### ㅡ Simple black box (Recording, Play function)
 
 ![version](https://img.shields.io/badge/version-0.0.1-orange?)
-![android](https://img.shields.io/badge/android-3.4.2-blue?logo=android)
-![java](https://img.shields.io/badge/java-java jdk 13-yellow?logo=java)
+![android](https://img.shields.io/badge/android-oreo-pink?logo=android)
+![java](https://img.shields.io/badge/java-java jdk 10-yellow?logo=java)
 
 
 ## Table of Contents
