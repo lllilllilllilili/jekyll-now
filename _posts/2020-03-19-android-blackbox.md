@@ -22,7 +22,6 @@ categories: portfolio
   - [Commit](#commit)
 - [Result](#result)
 - [Video](#video)
-- [Code](#code)
 - [License](#license)
 - [About](#about)
 
@@ -97,12 +96,9 @@ $ git push
 
 
 ## Video
-[![Video Label](http://img.youtube.com/vi/1L3viy_noBQ/0.jpg)](https://www.youtube.com/watch?v=1L3viy_noBQ)
+[![Video Label](http://img.youtube.com/vi/T2uOkh1bpcg/0.jpg)](https://www.youtube.com/watch?v=T2uOkh1bpcg)
 <center>위 img 클릭 시 영상으로 넘어갑니다. 😀</center>
 
-
-## Code
-[code]
 
 ## license
 MIT License
