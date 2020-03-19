@@ -21,6 +21,8 @@ categories: portfolio
   - [Testing](#testing)
   - [Commit](#commit)
 - [Result](#result)
+- [Video](#video)
+- [Code](#code)
 - [License](#license)
 - [About](#about)
 
@@ -73,29 +75,35 @@ $ git push
 
 <center><img src="../../assets/images/android/a1.png" width="500" height="500"></center>
 <center>초기 화면</center>
+--- 
 <br>
 <center><img src="../../assets/images/android/a2.png" width="500" height="500"></center>
 <center>처음시작시 GPS LOADING 합니다.</center>
+--- 
 <br>
 <center><img src="../../assets/images/android/a3.png" width="500" height="500"></center>
 <center>화시작후 현재위치에서 움직이면 위도,경도,속도 값을 확인할 수 있습니다.</center>
+--- 
 <br>
 <center><img src="../../assets/images/android/a4.png" width="500" height="500"></center>
 <center>녹화중지시 현재시간 포맷으로 파일이 저장됩니다.</center>
+--- 
 <br>
 <center><img src="../../assets/images/android/a5.png" width="500" height="500"></center>
 <center>녹화 후 저장된 리스트를 보여줍니다.</center>
+--- 
 <br>
 <center><img src="../../assets/images/android/a6.png" width="500" height="500"></center>
-<center>저장된 녹화영상을 재생하면 밑에 프로그레바와 우측에 정보가 표시됩니다.</center>
-<br>
-
-<center>
-[![Video Label](http://img.youtube.com/vi/1L3viy_noBQ/0.jpg)](https://www.youtube.com/watch?v=1L3viy_noBQ)
+<center>저장된 녹화영상을 재생하면 밑에 프로그레바와 우측에 정보가 표시됩니다.
 </center>
+
+
+## Video
+[![Video Label](http://img.youtube.com/vi/1L3viy_noBQ/0.jpg)](https://www.youtube.com/watch?v=1L3viy_noBQ)
 <center>위 img 클릭 시 영상으로 넘어갑니다. 😀</center>
 
-## code
+
+## Code
 [code]
 
 ## license
