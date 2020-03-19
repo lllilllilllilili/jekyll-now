@@ -58,27 +58,28 @@ $ git push
 
 ## Result
 
-<center><img src="../../assets/images/android/a1.png" width="300" height="300"></center>
-<center>(Initial screen)</center>
+<center><img src="../../assets/images/android/a1.png" width="500" height="500"></center>
+<center>초기 화면</center>
 
-<center><img src="../../assets/images/android/a2.png" width="300" height="300"></center>
-<center>GPS is loaded at first start.</center>
-
-
-<center><img src="../../assets/images/android/a3.png" width="300" height="300"></center>
-<center>If you move from the current location after recording, you can check the latitude, longitude, and speed values.</center>
-
-<center><img src="../../assets/images/android/a4.png" width="300" height="300"></center>
-<center>The file is saved in the current time format when recording is stopped.</center>
-
-<center><img src="../../assets/images/android/a5.png" width="300" height="300"></center>
-<center>Shows the saved list after recording.</center>
-
-<center><img src="../../assets/images/android/a6.png" width="300" height="300"></center>
-<center>When you play a saved recording, the information is displayed on the right side of the progressive bar below.</center>
+<center><img src="../../assets/images/android/a2.png" width="500" height="500"></center>
+<center>처음시작시 GPS LOADING 합니다.</center>
 
 
-<iframe width="640" height="360" src="https://www.youtube.com/watch?v=1L3viy_noBQ" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+<center><img src="../../assets/images/android/a3.png" width="500" height="500"></center>
+<center>화시작후 현재위치에서 움직이면 위도,경도,속도 값을 확인할 수 있습니다.</center>
+
+<center><img src="../../assets/images/android/a4.png" width="500" height="500"></center>
+<center>녹화중지시 현재시간 포맷으로 파일이 저장됩니다.</center>
+
+<center><img src="../../assets/images/android/a5.png" width="500" height="500"></center>
+<center>녹화 후 저장된 리스트를 보여줍니다.</center>
+
+<center><img src="../../assets/images/android/a6.png" width="500" height="500"></center>
+<center>저장된 녹화영상을 재생하면 밑에 프로그레바와 우측에 정보가 표시됩니다.</center>
+
+<center>[![Video Label](http://img.youtube.com/vi/1L3viy_noBQ/0.jpg)](https://www.youtube.com/watch?v=1L3viy_noBQ)
+</center>
+<center>위 img 클릭 시 영상으로 넘어갑니다. 😀</center>
 
 ## code
 [code]
@@ -94,4 +95,4 @@ Authored and maintained by **ingyu**
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
-[code]: https://github.com/lllilllilllilili/hufs_projects/blob/master/OperatingSystem/Heart%20rate%20measurement.c
+[code]: https://github.com/lllilllilllilili/hufs_projects/tree/master/MobileProgramming
