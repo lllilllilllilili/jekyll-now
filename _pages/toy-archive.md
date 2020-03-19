@@ -2,7 +2,7 @@
 title: "Toy poster"
 layout: category
 permalink: /Toy/
-taxonomy: update
+taxonomy: toy
 author_profile: true
 ---
 This is a post about the Toy Project. 🔥
