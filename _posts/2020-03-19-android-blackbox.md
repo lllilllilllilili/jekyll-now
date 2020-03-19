@@ -77,7 +77,8 @@ $ git push
 <center><img src="../assets/images/android/a6.png" width="300" height="300"></center>
 <center>When you play a saved recording, the information is displayed on the right side of the progressive bar below.</center>
 
-[![Video Label]()](https://www.youtube.com/watch?v=1L3viy_noBQ)
+
+<iframe width="640" height="360" src="https://www.youtube.com/watch?v=1L3viy_noBQ" frameborder="0" gesture="media" allowfullscreen=""></iframe>
 
 ## code
 [code]
