@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "InGyu's Portfolio"
 title_separator          : "-"
-subtitle                 : "Thank you for coming to see us."# site tagline that appears below site title in masthead
+subtitle                 : "Thank you for coming to see me."# site tagline that appears below site title in masthead
 name                     : "InGyu"
 description              : "We will find the way as always"
 url                      : "https://lllilllilllilili.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
