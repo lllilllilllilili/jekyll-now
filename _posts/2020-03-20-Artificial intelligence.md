@@ -1,0 +1,126 @@
+---
+title: "Artificial intelligence"
+date: 2020-03-20
+categories: study
+
+---
+#### ㅡ Artificial intelligence
+
+![version](https://img.shields.io/badge/version-0.0.1-orange?)
+![unity](https://img.shields.io/badge/unity-2.18.10-purple?logo=unity)
+![photon](https://img.shields.io/badge/photon-2.0.1-blue?logo=photon)
+![mysql](https://img.shields.io/badge/mysql-8.0.13-yellow?logo=mysql)
+![android](https://img.shields.io/badge/android-Oreo-pink?logo=android)
+
+
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Prerequisite](#prerequisite)
+- [Development](#development)
+  - [Schedule](#schedule)
+  - [Role](#role)
+  - [Development Environment](#development_environment)
+  - [System Design](#system_design)
+  - [Connection](#connection)
+  - [Result](#result)
+- [License](#license)
+- [About](#about)
+
+## Introduction
+![intro](../../assets/images/vr/intro.png)
+
+방탈출 게임은 현실 세계에서 실제로 즐길 수 있는 게임입니다. 이를 VR로 개발함 에 따라 현실 세계를 가상 현실로 끌여들여 새로운 컨텐츠를 제작하였습니다. 이에 따라, 상당 부분 비용을 절감할 수 있고 집에서 친구와 즐길 수 있는 게임이라는 점 에서 남녀 노소를 불구하고 새로운 여가생활를 제공해 줄것이라 확신했습니다.
+
+## Prerequisite
+
+Must install the following three programs:
+
+- [unity](https://unity3d.com/kr/get-unity/download): Development was carried out using the Unity Framework.
+- [mysql](https://dev.mysql.com/downloads/): Manage data using mysql.
+- [android](https://dev.mysql.com/downloads/): Export the unity.apk file to work in android study.
+
+## Schedule
+![scheule](../../assets/images/vr/schedule.png)
+
+## Role
+![role](../../assets/images/vr/role.png)
+
+
+## Development_environment
+<center>하드웨어</center>
+![env0](../../assets/images/vr/env0.png)
+<center>소프트웨어</center>
+![env](../../assets/images/vr/env.png)
+
+## System_design
+![design](../../assets/images/vr/design.png)
+
+Unity, Photon engine, php, SQLite 를 사용하였습니다. 게임 전반적인 UI나 설 정에 대해서는 Unity를 사용하였으며 대부분 로직에 관한것은 C# script 로 구 성됩니다. Photon engine을 사용하여 Multi system을 구축하였으며 상호작용 을 확인할 수 있습니다. SQLite db를 사용하여 게임내 플레이어에 할당된 번호 를 통해 플레이어를 관리할 수 있으며 Server로 php를 사용하였습니다.
+
+## Connection
+![design](../../assets/images/vr/connection.png)
+Photon Engine, php을 사용하였습니다. Photon Engine은 Unity에 적용하여 사 용자 간의 원활한 네트워킹을 형성합니다. php를 통해 DB와의 연동을 가능하 게 하고 C# script에서 개발자가 작성한 코드를 통해 php로 전달 이를 DB에 저장할 수 있도록 설계하였습니다.
+
+### Commit
+
+We are following [Angular's commitizen rules](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) for formatting git commit message. This allows you to read messages that are easy to understand when looking for project history. It also uses the git commit message to generate our [CHANGELOG](/CHANGELOG.md) file.
+```bash
+$ npm install -g git-cz
+$ git add .
+$ git git-cz
+$ git push
+```
+
+## Result
+
+<center>초기 화면</center>
+<center><img src="../../assets/images/vr/i.png" width="500" height="500"></center>
+
+--- 
+<br>
+<center>메뉴얼</center>
+<center><img src="../../assets/images/vr/i1.png" width="500" height="500"></center>
+<center><img src="../../assets/images/vr/i1-1.png" width="500" height="500"></center>
+<center><img src="../../assets/images/vr/i1-2.png" width="500" height="500"></center>
+--- 
+<br>
+<center>방탈출요소</center>
+<center><img src="../../assets/images/vr/i2.png" width="500" height="500"></center>
+<center><img src="../../assets/images/vr/i3.png" width="500" height="500"></center>
+---
+<br>
+<center>멀티플레이어</center>
+<center><img src="../../assets/images/vr/i4.png" width="500" height="500"></center>
+---
+<br>
+<center>게임로직</center>
+<center><img src="../../assets/images/vr/i5-1.png" width="500" height="500"></center>
+<br>
+<center>게임로직(ray)</center>
+<center><img src="../../assets/images/vr/i6.png" width="500" height="500"></center>
+
+---
+<br>
+<center>마이크</center>
+<center><img src="../../assets/images/vr/i7.png" width="500" height="500"></center>
+
+---
+<br>
+
+
+
+
+## license
+MIT License
+
+## About
+
+Authored and maintained by **ingyu**
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+[code]: https://github.com/lllilllilllilili/hufs_projects/tree/master/MobileProgramming

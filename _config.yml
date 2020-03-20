@@ -113,6 +113,7 @@ author:
   location         : "Seoul"
   email            : "tqbs1024@gmail.com"
   github           : "lllilllilllilili"
+  backjun          : "hik3562"
   #stackoverflow    : "황인규"
   links:
     - label: "Email"
@@ -136,6 +137,10 @@ author:
     # - label: "Stackoverflow"
       # icon: "fab fa-stack-overflow"
        # url: "https://stackoverflow.com/users/10683643/황인규"
+    - label : "Backjun"
+      icon: "fas fa-fw fa-book"
+      url: "https://www.acmicpc.net/user/"
+      
 # Site Footer
 footer:
   links:
