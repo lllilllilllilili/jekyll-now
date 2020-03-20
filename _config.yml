@@ -140,6 +140,9 @@ author:
     - label : "Backjun"
       icon: "fas fa-fw fa-book"
       url: "https://www.acmicpc.net/user/hik3562"
+    - label: "Stackoverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/10683643/황인규"
 
 # Site Footer
 footer:
