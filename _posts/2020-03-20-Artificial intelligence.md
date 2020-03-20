@@ -6,121 +6,74 @@ categories: study
 ---
 #### ㅡ Artificial intelligence
 
-![version](https://img.shields.io/badge/version-0.0.1-orange?)
-![unity](https://img.shields.io/badge/unity-2.18.10-purple?logo=unity)
-![photon](https://img.shields.io/badge/photon-2.0.1-blue?logo=photon)
-![mysql](https://img.shields.io/badge/mysql-8.0.13-yellow?logo=mysql)
-![android](https://img.shields.io/badge/android-Oreo-pink?logo=android)
+![notion](https://img.shields.io/badge/notion-2020ver-purple?logo=notion)
 
 
 
+
+### supervised learning vs unsupervised learning
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Prerequisite](#prerequisite)
-- [Development](#development)
-  - [Schedule](#schedule)
-  - [Role](#role)
-  - [Development Environment](#development_environment)
-  - [System Design](#system_design)
-  - [Connection](#connection)
-  - [Result](#result)
-- [License](#license)
+- [What is Big Data?](#what_is_big_data?)
+- [What is Machine Learning?](#what_is_machine_learning?)
+  - [What is Data Mining](#what_is_data_mining)
+- [Learning](#learning)
+  - [supervised learning vs unsupervised learning](#supervised_learning_vs_unsupervised_learning)
+  - [representation learning](#representation_learning)
+- [Example](#example)
 - [About](#about)
 
-## Introduction
-![intro](../../assets/images/vr/intro.png)
+## What is Big Data?
+빅 데이터란 기존 데이터베이스 관리도구의 능력을 넘어서는 대량의 정형 또는 심지어 데이터베이스 형태가 아닌 비정형의 데이터 집합조차 포함한 데이터로부터 가치를 추출하고 결과를 분석하는 기술
 
-방탈출 게임은 현실 세계에서 실제로 즐길 수 있는 게임입니다. 이를 VR로 개발함 에 따라 현실 세계를 가상 현실로 끌여들여 새로운 컨텐츠를 제작하였습니다. 이에 따라, 상당 부분 비용을 절감할 수 있고 집에서 친구와 즐길 수 있는 게임이라는 점 에서 남녀 노소를 불구하고 새로운 여가생활를 제공해 줄것이라 확신했습니다.
+## What_is_Machine_Learning?
+데이터 처리 방법론 = 머신러닝
+기계 학습 또는 머신 러닝은 인공 지능의 한 분야로, 컴퓨터가 학습할 수 있도록 하는 알고리즘과 기술을 개발하는 분야를 말한다. 비정형데이터(이미지, 텍스트-e.g 뉴스, 블로그게시물)를 처리한다.
+### What_is_Data_Mining?
+데이터 마이닝 = 정형데이터(나이, 거주지역)
+데이터 마이닝은 대규모로 저장된 데이터 안에서 체계적이고 자동적으로 통계적 규칙이나 패턴을 찾아 내는 것이다. 다른 말로는 KDD라고도 일컫는다.
 
-## Prerequisite
+## Learning 
+### supervised_learning_vs_unsupervised_learning
+supervised learning(지도 학습), 지도 데이터 = 학습된 데이터를 가지고 training 하고 testing 한다. 선형모델과 비선형모델이 있다.
+unsupervised learning(비지도 학습), 이미지 보고 판단 e.g) 자동차인지 꽃인지 확인
+데이터 생김에 따라서 그룹을 나눌 수 있다. 알고리즘으로 데이터를 나눌 수 있다.
+K-means Clustering - 기준점으로 가까운점을 찾는다.
+![](../../assets/images/study/kmeans.png)
 
-Must install the following three programs:
+디비스캔 = 기준 점들을 먼저 찾는것 보다, 임의의 데이터 포인트 시작해서 자기 가까운 점으로 세력 확장
+![](../../assets/images/study/dbscan.png)
+### representation_learning
 
-- [unity](https://unity3d.com/kr/get-unity/download): Development was carried out using the Unity Framework.
-- [mysql](https://dev.mysql.com/downloads/): Manage data using mysql.
-- [android](https://dev.mysql.com/downloads/): Export the unity.apk file to work in android study.
+딥러닝은 Representation Learning이라는 정의를 갖는다.
+multiple level로 모델링 하는 것 = 다양한 층(layer)을 쌓아 각 층마다 데이터의 패턴을 학습시켜 각 층마다 학습시킨 패턴을 종합하는 과정
 
-## Schedule
-![scheule](../../assets/images/vr/schedule.png)
+딥러닝이 두각되는 이유는 
+- 기존의 인공신경망의 단점을 보완할 수 있는 알고리즘의 발전을 얘기 할 수 있고
 
-## Role
-![role](../../assets/images/vr/role.png)
+- 학습시킬수 있는 충분한 데이터(빅데이터)
 
+- GPU의 등장으로 빠른 연산을 가능하게 한것을 들 수 있다.
 
-## Development_environment
-<center>하드웨어</center>
-![env0](../../assets/images/vr/env0.png)
-<center>소프트웨어</center>
-![env](../../assets/images/vr/env.png)
+이에 따라서, 데이터 사이즈가 커짐에 따라서 의미있는 demension 의 뉴런 모델, 뉴런 네트워크 연구. 
+뉴런 네트워크가 사진을 보면서 얼굴 경계선 찾을 수 있고, 얼굴안에 있는 눈,코,입 선으로 이루어졌다. 
+뉴런네트워크 연구 = 좋은 모델이다. 다양한 것으로 표현되기 좋다. 계산하는데 오랜시간이 걸릴 수 있다. 하지만, 데이터 양이 많다. GPU 로 처리 할 수 있다.
 
-## System_design
-![design](../../assets/images/vr/design.png)
-
-Unity, Photon engine, php, SQLite 를 사용하였습니다. 게임 전반적인 UI나 설 정에 대해서는 Unity를 사용하였으며 대부분 로직에 관한것은 C# script 로 구 성됩니다. Photon engine을 사용하여 Multi system을 구축하였으며 상호작용 을 확인할 수 있습니다. SQLite db를 사용하여 게임내 플레이어에 할당된 번호 를 통해 플레이어를 관리할 수 있으며 Server로 php를 사용하였습니다.
-
-## Connection
-![design](../../assets/images/vr/connection.png)
-Photon Engine, php을 사용하였습니다. Photon Engine은 Unity에 적용하여 사 용자 간의 원활한 네트워킹을 형성합니다. php를 통해 DB와의 연동을 가능하 게 하고 C# script에서 개발자가 작성한 코드를 통해 php로 전달 이를 DB에 저장할 수 있도록 설계하였습니다.
-
-### Commit
-
-We are following [Angular's commitizen rules](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) for formatting git commit message. This allows you to read messages that are easy to understand when looking for project history. It also uses the git commit message to generate our [CHANGELOG](/CHANGELOG.md) file.
-```bash
-$ npm install -g git-cz
-$ git add .
-$ git git-cz
-$ git push
-```
-
-## Result
-
-<center>초기 화면</center>
-<center><img src="../../assets/images/vr/i.png" width="500" height="500"></center>
-
---- 
-<br>
-<center>메뉴얼</center>
-<center><img src="../../assets/images/vr/i1.png" width="500" height="500"></center>
-<center><img src="../../assets/images/vr/i1-1.png" width="500" height="500"></center>
-<center><img src="../../assets/images/vr/i1-2.png" width="500" height="500"></center>
---- 
-<br>
-<center>방탈출요소</center>
-<center><img src="../../assets/images/vr/i2.png" width="500" height="500"></center>
-<center><img src="../../assets/images/vr/i3.png" width="500" height="500"></center>
----
-<br>
-<center>멀티플레이어</center>
-<center><img src="../../assets/images/vr/i4.png" width="500" height="500"></center>
----
-<br>
-<center>게임로직</center>
-<center><img src="../../assets/images/vr/i5-1.png" width="500" height="500"></center>
-<br>
-<center>게임로직(ray)</center>
-<center><img src="../../assets/images/vr/i6.png" width="500" height="500"></center>
-
----
-<br>
-<center>마이크</center>
-<center><img src="../../assets/images/vr/i7.png" width="500" height="500"></center>
-
----
-<br>
-
-
-
-
-## license
-MIT License
+## Example
+왓슨, 알파고 같은 사례가 있다.
+구글 듀플렉스 와 같은 경우
 
 ## About
-
 Authored and maintained by **ingyu**
 
+## Sources
+[wiki]
 
+[참고블로그1]
+
+[wiki]: https://ko.wikipedia.org/wiki/
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 [code]: https://github.com/lllilllilllilili/hufs_projects/tree/master/MobileProgramming
+[참고블로그1]: https://t-lab.tistory.com/1 
