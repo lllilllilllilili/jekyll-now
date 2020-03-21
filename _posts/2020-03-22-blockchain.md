@@ -1,5 +1,5 @@
 ---
-title: "Applying Cache with redis"
+title: "Try creating blockchain with java"
 date: 2020-03-22
 categories: toy
 
@@ -15,104 +15,30 @@ categories: toy
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Cache Memory](#cache_memory)
-- [Project_System_Architecture_Initiative](#project_system_architecture_initiative)
-- [Project Practice](#project_practice)
+- [Hash definitions, reasons for use](#hash_definitions_reasons_for_use)
+- [Blockchain Principles & Issues](#blockchain_principles_&_issues)
 - [Result](#result)
 - [License](#license)
 - [About](#about)
 
 ## Introduction
-redis 를 활용해서 caching 적용해보기
-
-## Cache_Memory
-
-![d2](../../assets/images/redis/r2.png)
-
-어디에 `캐시` 를 두는것이 효과적일까? 위의 구조가 효과적입니다. 자주 찾는 데이터를 캐시 해야 합니다.  하지만 데이터 양이 많아진다면, `캐시의 분배` 가 요구됩니다.
-캐시의 분배 고려 요소
-- Range가 너무 크면 서버별 사용 리소스가 차이 날 수 있다.
-- 서버 대수에 따라서 데이터 이동이 많아진다. 2배씩 증가 하는게 유리
-- 서버의 추가/제거 시에 1/n 정도의 데이터만 사라진다.
-
-![d2](../../assets/images/redis/r3.png)
-
-Capacity 와 Latency 관련된 사진이다.
-캐시 메모리는 내부적으로 제어하는데, 데이터의 재사용성, 지역성을 포함해 빠른 access, 성능을 고려하여 캐시 메모리를 활용한다.
-이와 같은 구조는 메모리와 CPU의 발전 속도에 따라 달라지는 것이다. CPU의 성장 증가폭이 가파른 반면 메모리는 그렇지 못하였기 때문에 전체 시스템 성능이 하락하는 점이다.
-주목해서 봐야할 것은 시간 지역성 과 공간 지역성이다.
-
-`시간 지역성` : 시간 지역성이란 for나 while 같은 반복문에 사용하는 조건 변수처럼 한번 참조된 데이터는 잠시 후에 또 참조될 가능성이 높다는 것
-
-`공간 지역성` : 공간 지역성이란 A[0], A[1]과 같은 데이터 배열에 연속으로 접근할 때 참조된 데이터 근처에 있는 데이터가 잠시 후에 사용될 가능성이 높다는 것이다.
-
-```
-<?php
-function heavy_job($input){
-    sleep(5); // 5초가 걸리는 작업
-    return $input+1;
-}
- 
-$cache = array();
-$input = 10;
-if(empty($cache[$input])){
-    $cache[$input] = heavy_job($input);
-}
-echo $cache[$input];
- 
-if(empty($cache[$input])){
-    $cache[$input] = heavy_job($input);
-}
-echo $cache[$input];
- 
-?>
-
-```
-
-Caching 의 메커니즘을 이해하기 좋은 코드인 것 같아 첨부하였다. 데이터가 있으면 저장되어있는것을 가져오고 없다면 저장한다. 일종의 Dynamic Programming 과 유사하다.
-단, 캐싱을 할때 새로운 것을 데이터베이스에 갱신했다면 캐시의 저장소도 갱신해야 한다.
-
-## Project_System_Architecture_Initiative
-![d2](../../assets/images/redis/r4.png)
-
-가장 큰 병목 현상이 예상되는 구간은 feed 부분 입니다. feed 에서 많은 user 들을 불러오고 데이터를 참조하기 때문에 user 가 동시에 feed 를 열람하게 
-
-되면 성능 저하가 발생할 수 있다고 판단했습니다.
-
-![d2](../../assets/images/redis/r5.png)
+블록체인은 원장 분산 시스템으로 P2P 형식으로 노드와 사슬이 연결되어 있는 방식입니다. 1세대 블록체인 기술백서에서는 합의 알고리즘으로 동작합니다. 블록체인은 decentualize 를 실현하며, 흔히 말하는 DAPP 을 통칭 합니다. 이를 통해 중앙 집권 저장방식에서 분산화된 개인이 데이터를 저장가능합니다. 하지만, 아쉽게도 블록체인 트랜잭션을 개인이 전부 가지고 있기에는 역부족 이기 때문에 아이러니 하게도 거래소와 같은 곳에서 이러한 데이터를 관리하게 됩니다. 
 
 
+## Hash_definitions_reasons_for_use
 
-## Project_Practice
+Hash는 일반적으로 암호화가 적용된 SHA-256 을 사용하며, 사용하는 이유는 객체를 구별하기 위해 사용합니다.
 
-![d2](../../assets/images/redis/r6.png)
+Hash 단독으로 사용되는 것보다 `이전해쉬 + 데이터값 + 타임스태프 + nonce` 로 조합하여 만들고 Hash Function 을 사용해 Hash를 구합니다.
 
-프로젝트에서 FeedList를 read 하는 부분에 Redis Cache를 두어 결과를 확인하였습니다.
+## Blockchain_Principles_&_Issues
+
+![d2](../../assets/images/blockchain/b1.png)
+
 
 
 ## Result
-### Redis-Caching-Before(Response Time)
-
-![d2](../../assets/images/redis/r7.png)
-
-응답시간이 Avg 400 정도로 파악해볼 수 있습니다.
-
-### Redis-Caching-After(Response Time)
-
-![d2](../../assets/images/redis/r8.png)
-
-응답시간이 Avg 150 정도로 파악해볼 수 있습니다.
-
-![d2](../../assets/images/redis/r9.png)
-
-초당 트랜잭션 발생이 Avg 90 정도로 파악해볼 수 있습니다. 1분에 최대 5,400 트랜잭션을 유지할 수 있습니다.
-
-### Redis-Caching-After(TPS)
-
-![d2](../../assets/images/redis/r10.png)
-
-초당 트랜잭션 발생이 Avg 300 정도로 파악해볼 수 있습니다. 1분에 최대 18,000 트랜잭션을 유지할 수 있습니다.
-
+[code]
 
 ## license
 MIT License
@@ -125,4 +51,4 @@ Authored and maintained by **ingyu**
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
-[code]: https://github.com/lllilllilllilili/hufs_projects/blob/master/OperatingSystem/Heart%20rate%20measurement.c
+[code]: https://github.com/lllilllilllilili/hufs_projects/blob/master/blockchain/demoApplication.java
