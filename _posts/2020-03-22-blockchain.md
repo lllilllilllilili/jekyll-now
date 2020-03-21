@@ -4,10 +4,10 @@ date: 2020-03-22
 categories: toy
 
 ---
-#### ㅡ Applying Cache with redis
+#### ㅡ Try creating blockchain with java
 
 ![toy-project](https://img.shields.io/badge/toy_project-67orange?)
-![redis](https://img.shields.io/badge/redis-2.8-blue?logo=redis)
+![java](https://img.shields.io/badge/java-jdk_13-blue?logo=java)
 
 
 
