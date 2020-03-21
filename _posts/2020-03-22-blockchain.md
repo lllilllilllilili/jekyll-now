@@ -38,6 +38,10 @@ Hash 단독으로 사용되는 것보다 `이전해쉬 + 데이터값 + 타임�
 
 
 ## Result
+![d2](../../assets/images/blockchain/b2.png)
+
+![d2](../../assets/images/blockchain/b3.png)
+
 [code]
 
 ## license
