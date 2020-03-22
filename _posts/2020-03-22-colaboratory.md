@@ -83,13 +83,13 @@ drive.mount('/gdrive')
 !pip install face_recognition
 ```
 
-openCV를 활용해서 인물의 얼굴을 찾을 수 있다. 
+face_recognition package 를 사용하여 openCV로 인물의 얼굴을 찾을 수 있다. 
 
 
 
 ![d2](../../assets/images/colaboratory/c2.png)
 
-이와 유사하게,
+이와 유사하게,여러 인물의 사진에서 얼굴을 좌표를 알아내서 자를 수 있다.
 
 이미지 파일을 로드하여 person_list 생성
 얼굴 좌표를 알아내서 자른다. 이후, person_list에서 잘라낸 face_image 를 저장한다. face_list에 저장된 얼굴들을 출력한다. 
@@ -98,7 +98,7 @@ openCV를 활용해서 인물의 얼굴을 찾을 수 있다.
 
 이제 인물 유사로들 살펴보면, 
 
-기존에 없는 새로운 파일을 열고 얼굴좌표를 알아와서 자른다. unknown_face 라는 타이틀을 생성하고 인코딩하여 기존에 face_list와의 인코딩 값을 비교하여 distance 를 비교한다. 0.5에 가까우면 비슷한 사람 그 이상이면 아주 다른사람으로 살펴볼 수 있다.
+기존에 없는 새로운 파일을 열고 얼굴좌표를 알아와서 자른다. unknown_face 라는 타이틀을 생성하고 인코딩하여 기존에 face_list와의 인코딩 값을 비교하여 distance 를 비교한다. 0.5에 가까우면 비슷한 사람 그 이상이면 아주 다른사람으로 살펴볼 수 있었다.
 
 
 ![d2](../../assets/images/colaboratory/c4.png)
